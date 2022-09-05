@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="button.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+      <title>HOME TUTOR</title>
+      <link rel="icon" type="image/x-icon" href="images/class.png">
+
+</head>
+<body>
+<div class="container">
+  <nav class="navbar navbar-expand-md navbar-light bg-light mt-3 mb-3">
+
+      <a class="navbar-brand h1" href="index.html" style="color: black; font-family: algerian; font-size: 2em; padding: 10px;">
+        <img src="images/training.png" style="display: inline-block;">
+        <span><strong> HOME TUTORIAL </strong></span>
+      </a>
+      <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#newsMenu" aria-controls="newsMenu" aria-expanded="false" aria-label="toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav justify-content-end" id="newsMenu">
+          <div class="navbar-nav nav-pills flex-row ml-md-auto d-md-flex">
+            <a class="nav-item nav-link p-2 active" href="index.html"> HOME </a>
+            <a class="nav-item nav-link p-2" href="about.html"> ABOUT </a>
+            <a class="nav-item nav-link p-2" href="contact.html"> CONTACT </a>
+          </div>
+      </div>
+  </nav>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 style="font-family: snap ITC;" >INTERESTED IN CODING LESSONS???</h1> <br>
+                    <h2> Learn WEB DESIGN <em style="font-family: forte;"> AND/OR </em> PYTHON from the comfort of your home.</h2>
+                    <hr class="my-4">
+                    <p> Click The Button Below To Register OR Call <em><b style="color:red; font-size:25px;">07013547076</b></em> </p>
+                    <!-- <a id="reg" href="https://form.jotform.com/222251097204548" type="button" class="p-3 btn btn-info reg"><span> REGISTER </span></a> -->
+                    <a href="https://form.jotform.com/222251097204548"> <button type="button" class="button"><span> REGISTER </span></button> </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center"> COURSES </h3>
+                <hr class="my-4">
+            </div>
+        </div>
+
+        <div class="row" id='row_course'>
+            <div class="col-md-6 col-sm-6 col-s-12">
+                <div class="card mt-3">
+                    <img id='img_course' class="card-img-top mt-2" src="images/web.png" >
+                    <div class="card-body">
+                        <h5 class="card-title"> WEB DESIGN </h5>
+                        <p class="card-text">Description</p>
+                        <a href="courses.html" class="btn btn-info web"> Read More </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-s-12">
+                <div class="card mt-3">
+                    <img id='img_course' class="card-img-top" src="images/python.png" >
+                    <div class="card-body">
+                        <h5 class="card-title"> PYTHON </h5>
+                        <p class="card-text">Description</p>
+                        <a href="courses.html" class="btn btn-info py"> Read More </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-s-12">
+                <div class="card mt-3">
+                    <img id='img_course' class="card-img-top" src="images/html.png" >
+                    <div class="card-body">
+                        <h5 class="card-title"> JAVASCRIPT </h5>
+                        <p class="card-text">Description</p>
+                        <a href="courses.html" class="btn btn-info js"> Read More </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-sm-6 col-s-12">
+                <div class="card mt-3">
+                    <img id='img_course' class="card-img-top" src="images/golang.png" >
+                    <div class="card-body">
+                        <h5 class="card-title"> GOLANG </h5>
+                        <p class="card-text">Description</p>
+                        <a href="courses.html" class="btn btn-info go"> Read More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+$(document).ready(function(){
+  $('.web').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<p><strong>HTML</strong></p> <ol> <li>Introduction</li> <li>Formatting Text</li> <li>Images</li> <li>Links</li> <li>Tables</li> <li>Forms</li> <li>Classes & ID</li> <li>HTML Project</li> </ol> <hr> <p><strong>CSS</strong></p> <ol> <li>Introduction</li> <li>CSS Selectors</li> <li>CSS Properties</li> <li>Styling</li> <li>Your First Website</li> </ol> <hr> <p><strong>BOOTSTRAP</strong></p> <p>For Responsive Design</p>", html: true, placement: "left"});
+
+  $('.py').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<ol> <li>Introduction</li> <li>Data Types</li> <li>Variables</li> <li>Data Structures</li> <li>Conditional Statement</li> <li>Loop</li> <li>Functions</li> <li>Files</li> <li>Handling Error</li> <li>Classes</li> <li>Modules</li> <li>10 python projects</li> </ol>", html: true, placement: "right"});
+
+  $('.js').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<ol> <li>Introduction</li> <li>Data Types</li> <li>Methods & Operators</li> <li>Variables</li> <li>Conditionals</li> <li>Loops</li> <li>Functions</li> <li>JS Events</li> <li>Classes & Modules</li> <li>Keywords</li> <li>Projects</li> </ol>", html: true, placement: "left"});
+
+  $('.go').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<ol> <li>Introduction</li> <li>Data Types</li> <li>Operators</li> <li>Variables & Constants</li> <li>Arrays, Slices & Structures</li> <li>Conditionals & Switches</li> <li>Loops</li> <li>Functions</li> <li>Output Functions</li> <li>Projects</li> </ol>", html: true, placement: "right"});
+});
+
+</script>
+
+<hr class="my-4">
+
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md nav justify-content-center">
+          <div class="row">
+            <div class="col-md-12 ">
+              <footer class="text-center h6" >
+                website designed by <i><a href="mailto:c.bammun@gmail.com">Bammun</a>
+                  <font size="2"> 2022</i></font>
+              </footer>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+</div>
+</body>
+</html>

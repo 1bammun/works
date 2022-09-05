@@ -1,0 +1,137 @@
+.contact {
+  padding-top: 50px;
+}
+
+.text{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#image{
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+    margin: auto;
+}
+
+.row a{
+	color: black;
+	text-decoration:none;
+}
+
+.row a:hover{
+	color: #17a2b8;
+	text-decoration:none;
+}
+
+/* .row .reg:hover{
+	color: #e9ecef;
+	text-decoration:none;
+} */
+.row .web:hover{
+	color: #e9ecef;
+	text-decoration:none;
+}
+.row .py:hover{
+	color: #e9ecef;
+	text-decoration:none;
+}
+.row .js:hover{
+	color: #e9ecef;
+	text-decoration:none;
+}
+.row .go:hover{
+	color: #e9ecef;
+	text-decoration:none;
+}
+
+#img{
+  border-radius:200px;
+  border-style: outset;
+  border-width: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: black;
+  border-radius:100px;
+  border-width:5px;
+  padding: 10px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav{
+  border-radius: 50px;
+}
+
+#row_course{
+  display: flex;
+  text-align: center;
+  border-radius:300px;
+  border-style: double ;
+  border-width: 15px;
+  border-color: #17a2b8;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul{
+  list-style-type: disc;
+}
+
+#form{
+  padding: 3%;
+  border-style: dashed ;
+  border-width: 2px;
+  border-color: #17a2b8;
+}
+
+#card{
+  border-style: dashed ;
+  border-width: 2px;
+  border-color: #17a2b8;
+}
+
+#submit{
+  position: relative;
+  left: 80%;
+  margin-bottom: 10px;
+}
+
+.info{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  #img_course{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+  }
+
+
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+#img_course{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+}
