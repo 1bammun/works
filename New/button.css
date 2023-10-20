@@ -1,18 +1,26 @@
+.nav  {
+  font-size: 10px;
+  padding: auto; 
+  width: auto;
+  align-self: center;
+  justify-content: center;
+}
+
 .button {
   border-radius: 4px;
-  background-color: red;
-  border: none;
-  color: black;
+  /* border: none; */
+  border-color: black;
+  background-color: White;
+  color: rgba(18, 3, 3, 0.973);
   /* text-align: center; */
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  font-size: 15px;
+  padding: 5px;
+  width: 150px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  box-shadow: 0 9px black;
-  outline: none;
   align-self: center;
+  opacity: 200px;
 }
 
 .button span {
@@ -22,11 +30,11 @@
   transition: 0.5s;
 }
 
-.button:active {
+/* .button:active {
   background-color: #17a2b8;
   box-shadow: 0 5px #666;
   transform: translateY(5px);
-}
+} */
 
 .button span:after {
   content: '\00bb';
@@ -37,24 +45,25 @@
   transition: 0.5s;
 }
 
-.button:hover span {
+/* .button:hover span {
   padding-right: 25px;
   color: #FFFFFF;
 }
 
 .button:hover span:after {
   opacity: 1;
-  right: 0;
-}
+  /* right: 0; 
+} */
 
+/*
 #newsMenu a {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  /* font-size: 20px; */
-  /* letter-spacing: 4px; */
+  font-size: 20px;
+  letter-spacing: 4px;
   position: relative;
-  /* background-color: #16a085; */
+  background-color: #16a085;
   background-color: #17a2b8;
   border: none;
   color: white;
@@ -94,7 +103,7 @@
 }
 
 #newsMenu a:focus { outline:0; }
-
+*/
 
 /* @media only screen and (max-width: 767px) {
   

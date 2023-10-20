@@ -16,8 +16,8 @@
 <div class="container">
   <nav class="navbar navbar-expand-md navbar-light bg-light mt-3 mb-3">
 
-      <a class="navbar-brand h1" href="index.html" style="color: black; font-family: algerian; font-size: 2em; padding: 10px;">
-        <img src="images/training.png" style="display: inline-block;">
+      <a class="navbar-brand h1" href="index.html" style="color: black; font-family: algerian; font-size: 1.5em; padding: 10px;">
+        <img id="icon" src="images/training.png" style="display: inline-block;">
         <span><strong> HOME TUTORIAL </strong></span>
       </a>
       <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#newsMenu" aria-controls="newsMenu" aria-expanded="false" aria-label="toggle navigation">
@@ -35,7 +35,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div class="jumbotron">
+                <div class="jumbotron" id="jumbo" style="text-align: center;">
                     <h1 style="font-family: snap ITC;" >INTERESTED IN CODING LESSONS???</h1> <br>
                     <h2> Learn WEB DESIGN <em style="font-family: forte;"> AND/OR </em> PYTHON from the comfort of your home.</h2>
                     <hr class="my-4">
@@ -60,7 +60,8 @@
                     <img id='img_course' class="card-img-top mt-2" src="images/web.png" >
                     <div class="card-body">
                         <h5 class="card-title"> WEB DESIGN </h5>
-                        <p class="card-text">Description</p>
+                        <p class="card-text">Learn to plan, create & code internet sites and web pages, 
+                            many of which combine text with sounds, pictures, graphics and video.</p>
                         <a href="courses.html" class="btn btn-info web"> Read More </a>
                     </div>
                 </div>
@@ -71,7 +72,8 @@
                     <img id='img_course' class="card-img-top" src="images/python.png" >
                     <div class="card-body">
                         <h5 class="card-title"> PYTHON </h5>
-                        <p class="card-text">Description</p>
+                        <p class="card-text">A computer programming language often used to build websites and software, 
+                            automate tasks, and conduct data analysis.</p>
                         <a href="courses.html" class="btn btn-info py"> Read More </a>
                     </div>
                 </div>
@@ -82,7 +84,8 @@
                     <img id='img_course' class="card-img-top" src="images/html.png" >
                     <div class="card-body">
                         <h5 class="card-title"> JAVASCRIPT </h5>
-                        <p class="card-text">Description</p>
+                        <p class="card-text">JavaScript (a.k.a JS) is a lightweight, interpreted, object-oriented language with first-class functions, 
+                            and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.</p>
                         <a href="courses.html" class="btn btn-info js"> Read More </a>
                     </div>
                 </div>
@@ -94,7 +97,8 @@
                     <img id='img_course' class="card-img-top" src="images/golang.png" >
                     <div class="card-body">
                         <h5 class="card-title"> GOLANG </h5>
-                        <p class="card-text">Description</p>
+                        <p class="card-text">Golang (a.k.a GO) is an open source programming language, developed by Google engineers, 
+                            used for general purpose to create dependable and efficient softwares. </p>
                         <a href="courses.html" class="btn btn-info go"> Read More </a>
                     </div>
                 </div>
@@ -105,7 +109,7 @@
 $(document).ready(function(){
   $('.web').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<p><strong>HTML</strong></p> <ol> <li>Introduction</li> <li>Formatting Text</li> <li>Images</li> <li>Links</li> <li>Tables</li> <li>Forms</li> <li>Classes & ID</li> <li>HTML Project</li> </ol> <hr> <p><strong>CSS</strong></p> <ol> <li>Introduction</li> <li>CSS Selectors</li> <li>CSS Properties</li> <li>Styling</li> <li>Your First Website</li> </ol> <hr> <p><strong>BOOTSTRAP</strong></p> <p>For Responsive Design</p>", html: true, placement: "left"});
 
-  $('.py').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<ol> <li>Introduction</li> <li>Data Types</li> <li>Variables</li> <li>Data Structures</li> <li>Conditional Statement</li> <li>Loop</li> <li>Functions</li> <li>Files</li> <li>Handling Error</li> <li>Classes</li> <li>Modules</li> <li>10 python projects</li> </ol>", html: true, placement: "right"});
+  $('.py').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<ol> <li>Introduction</li> <li>Data Types</li> <li>Variables</li> <li>Data Structures</li> <li>Conditional Statement</li> <li>Loop</li> <li>Functions</li> <li>Files</li> <li>Handling Error</li> <li>Classes</li> <li>Modules</li> <li>Projects</li> </ol>", html: true, placement: "right"});
 
   $('.js').popover({title: "<h6>What You'll Learn</h6>", trigger: "hover", content: "<ol> <li>Introduction</li> <li>Data Types</li> <li>Methods & Operators</li> <li>Variables</li> <li>Conditionals</li> <li>Loops</li> <li>Functions</li> <li>JS Events</li> <li>Classes & Modules</li> <li>Keywords</li> <li>Projects</li> </ol>", html: true, placement: "left"});
 
